@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Emblema+One&family=Stylish&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+
+
+
+</head>
+
+<body>
+    <div class="game">
+        <!-- 마우스 -->
+        <div class="cursor">
+            <img src="img/icons8-arrow-50.png" alt="화살표" />
+        </div>
+        <!-- 시작페이지 -->
+        <div class="bg1">
+            <video autoplay muted loop playsinline>
+                <source src="img/start_v.mp4" type="video/mp4">
+            </video>
+            <h2>THE PERFECT<br>
+                RAMEN COOK</h2>
+            <p>"Find the perfect heat to cook the ultimate ramen!"<br>최고의 라면을 끓이기 위한 완벽한 화력을 찾아내세요!</p>
+            <p id="startBtn"><span>start</span></p>
+        </div>
+
+        <div class="bg2">
+            <video class="video" autoplay muted loop playsinline>
+                <source src="img/main_v.mp4" type="video/mp4">
+            </video>
+            <div class="txt">
+                <p>"까다롭기로 소문난 미식가 손님이 라면을 주문했습니다.<br>면발이 가장 쫄깃해지는 마법의 온도를 맞추세요.<br>온도가 낮으면 면이
+                    퍼지고, 너무
+                    높으면 국물이 다 졸아붙어 버립니다!"</p>
+                <div id="result">HEAT : Up/Down/Perfect Heat</div>
+                <div id="chance">CHANCE : 5번</div>
+                <input id="user" placeholder="온도입력 (1-100 사이의 수)">
+
+                <button type="button" class="btn-subtle theme-primary" id="play">ENTER</button>
+                <button type="button" class="btn-subtle theme-primary" id="reset">RESTART</button>
+            </div>
+            <ul class="txt_m">
+                <li class="box1">
+                    <p>"까다롭기로 소문난 미식가 손님이 라면을 주문했습니다.<br>면발이 가장 쫄깃해지는 마법의 온도를 맞추세요."</p>
+
+                </li>
+                <li class="box2">
+                    <div id="result">HEAT : Up/Down/Perfect Heat</div>
+                    <div id="chance">CHANCE : 5번</div>
+                    <input id="user" placeholder="온도입력 (1-100)">
+
+                    <button type="button" class="btn-subtle theme-primary" id="play">ENTER</button>
+                    <button type="button" class="btn-subtle theme-primary" id="reset">RESTART</button>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+    </div>
+
+
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="custom.js"></script>
+
+</body>
+
+</html>
+<!--
+1.html요소 가지고오기
+2.1부터 100까지 수 만들기(randomNum)
+3.play함수를 만들어서 사용자가 입력한 값을 가지고 옴
+(시작버튼,enter)
+4.play함수안에 사용자가 입력한 수와 컴퓨터가 만든 수를 비교
+5.이미지도 변경함
+6.숫자를 입력하고 enter를 누르면 play함수를 호출
+7.change를 1씩 감소시키고 남은 찬스 몇개라고 출력
+
+찬스가 1보다 작으면 시작버튼이 비활성화
+찬스자리에 gameover 글자 출력
+입력창도 비활성화
+8.재시작을 클릭하면 처음화면으로 돌아감
+
+9.입력한 숫자를 입력하면 이미 입력된 숫자입니다.다른 숫자를 입력해주세요
+
+그러면서 남은 찬스에서는 빼지 않는다
+
+-->
