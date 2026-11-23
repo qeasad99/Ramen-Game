@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game</title>
+    <title>Ramen Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Emblema+One&family=Stylish&display=swap"
@@ -43,23 +44,30 @@
                     높으면 국물이 다 졸아붙어 버립니다!"</p>
                 <div id="result">HEAT : Up/Down/Perfect Heat</div>
                 <div id="chance">CHANCE : 5번</div>
-                <input id="user" placeholder="온도입력 (1-100 사이의 수)">
+                <div class="enter">
+                    <input type="text" id="user" class="form-control" placeholder="온도입력 (1-100 사이의 수)"
+                        onkeypress="if(event.keyCode==13) {play();}">
+                    <!-- <input id="user" placeholder="온도입력 (1-100 사이의 수)"> -->
 
-                <button type="button" class="btn-subtle theme-primary" id="play">ENTER</button>
-                <button type="button" class="btn-subtle theme-primary" id="reset">RESTART</button>
+                    <button type="button" class="btn-subtle theme-primary" id="play">ENTER</button>
+                    <button type="button" class="btn-subtle theme-primary" id="reset">RESTART</button>
+                </div>
             </div>
             <ul class="txt_m">
                 <li class="box1">
                     <p>"까다롭기로 소문난 미식가 손님이 라면을 주문했습니다.<br>면발이 가장 쫄깃해지는 마법의 온도를 맞추세요."</p>
-
                 </li>
                 <li class="box2">
+
                     <div id="result_m">HEAT : Up/Down/Perfect Heat</div>
                     <div id="chance_m">CHANCE : 5번</div>
-                    <input id="user_m" placeholder="온도입력">
+                    <div class="enter">
 
-                    <button type="button" class="btn-subtle theme-primary" id="play_m">ENTER</button>
-                    <button type="button" class="btn-subtle theme-primary" id="reset_m">RESTART</button>
+                        <input type="text" id="user_m" class="form-control" placeholder="온도입력"
+                            onkeypress="if(event.keyCode==13) {play();}">
+                        <button type="button" class="btn-subtle theme-primary" id="play_m">ENTER</button>
+                        <button type="button" class="btn-subtle theme-primary" id="reset_m">RESTART</button>
+                    </div>
                 </li>
             </ul>
         </div>
