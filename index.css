@@ -213,7 +213,7 @@
          display: flex;
          flex-direction: column;
          align-items: center;
-         gap: 90px;
+         gap: 50px;
          text-align: center;
          position: absolute;
          top: 35%;
@@ -239,10 +239,10 @@
 
 
      .bg2 .txt_m li:nth-of-type(2) {
-         width: 85%;
+         width: 100%;
          max-width: 350px;
          height: auto;
-         padding: 15px;
+         padding: 10px;
          background-color: greenyellow;
      }
 
